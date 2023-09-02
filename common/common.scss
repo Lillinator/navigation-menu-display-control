@@ -1,63 +1,3 @@
-// * sidebar background color *
-
-#main-outlet-wrapper {
-    .sidebar-wrapper {
-       background-color: $sidebar_background_color;
-    }
-}
-
-// * sidebar footer background color *
-
-.sidebar-footer-wrapper .sidebar-footer-container {
-    background-color: $sidebar_background_color;
-}
-
-.sidebar-footer-wrapper .sidebar-footer-container:before {
-    background: none;
-}
-
-// * More section background color *
-
-.sidebar-more-section-links-details-content {
-    background-color: $more_section_background_color;
-}
-
-// * active link color *
-
-.sidebar-section-link-wrapper .sidebar-section-link.active {
-    color: $current_link_font_color;
-    background: $current_link_background_color;
-}
-
-// * section headers formatting *
-
-.sidebar-section-wrapper .sidebar-section-header {
-    font-size: #{$header_font_size}px;
-    color: $header_font_color;
-    font-weight: $header_font_weight;
-    // align-items: left;
-}
-
-// * section links *
-
-.sidebar-section-link-wrapper .sidebar-section-link {
-    font-size: #{$link_font_size}px;
-    color: $link_font_color;
-    // font-weight: $link_font_weight;
-    // align-items: left;
-}
-
-// * side-bar link icon color clicked *
-
-.sidebar-section-link-wrapper .sidebar-section-link.active .sidebar-section-link-prefix.icon {
-    color: $current_link_icon_color;
-}
-
-// * side-bar link icon color *
-
-.sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-prefix.icon {
-    color: $link_icon_color;
-}
 
 // * hide entire Navigaion Menu from anon in desktop and mobile view*
 
@@ -75,16 +15,8 @@
   }
 }
 
-//.anon .sidebar-wrapper .sidebar-container,  
-//    .header-sidebar-toggle,
-//    .d-header .hamburger-panel,
-//    .hamburger-dropdown,
-//    .header-cloak {
-//    display: none
-//    }
-//}
 
-// * hide the Community Section *
+// * hide the Community Section from all or anon *
 
 @if $hide_community_section == "true" {
     .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
@@ -92,16 +24,13 @@
     }
 } 
 
-// * hide the Community Section from anon users *
-
 @if $hide_community_section_from_anon == "true" {
     .anon .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
     display: none;
     }
 } 
 
-
-// * hide More section from anon users *
+// * hide More section from all regular or anon users *
 
 @if $hide_more_section_from_anon == "true" {
     .anon .btn-flat.sidebar-more-section-links-details-summary, 
@@ -110,15 +39,12 @@
     }
 }
 
-// * hide More section from all users *
-
 @if $hide_more_section == "true" {
     .btn-flat.sidebar-more-section-links-details-summary, 
     .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
     display: none;
     }
 }
-
 
 // * hide the Categories Section *
 
@@ -136,7 +62,7 @@
     }
 } 
 
-// * hide the Tags Section *
+// * hide the Tags Section from all or anon*
 
 @if $hide_tags_section == "true" {
     .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
