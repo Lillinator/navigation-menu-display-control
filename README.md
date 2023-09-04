@@ -5,4 +5,4 @@ This theme component allows changing the display of navigation menu default and 
 
 There are no formatting functions in this component other than display options for navigation menu sections to staff, logged-in, or anon users.
 For group-specific navigation sidebar menu display options, please use the <a href="https://github.com/Lillinator/group-menu-sections">group menu sections theme component</a>.
-Thanks to @NathanK for the show whole sidebar to logged-in only code.
+Thanks to <a href="https://github.com/nathan-nz">@Nathan-nz</a> for the show sidebar to logged-in only code.
