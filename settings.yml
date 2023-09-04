@@ -1,219 +1,125 @@
-sidebar_background_color:
-  type: string
-  default: ""
-  description: 
-    en: "Side-bar background color in hexadecimal, css color name or Discourse color variable. Leave blank to use current default."
-  
-more_section_background_color:
-  type: string
-  default: ""
-  description: 
-    en: "More section background color. Leave blank to use current default."
-
-header_font_color:
-  type: string
-  default: ""
-  description: 
-    en: "Section headers font color. Leave blank to use current default."
-
-header_font_weight:
-  type: enum
-  default: normal
-  choices:
-    - normal
-    - bold
-  description: 
-    en: "Section headers font weight."
-
-header_font_size:
-  type: enum
-  default: ""
-  choices:
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 17
-    - 18
-    - 19
-    - 20
-  description: 
-    en: "Section headers text size in px. Leave blank to use current default."
-  
-link_font_color:
-  type: string
-  default: ""
-  description: 
-    en: "Section link font color. Leave blank to use current default."
-
-link_font_size:
-  type: enum
-  default: ""
-  choices:
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 17
-    - 18
-    - 19
-    - 20
-  description: 
-    en: "Section links text size in px. Leave blank to use current default."
-
-link_icon_color:
-  type: string
-  default: ""
-  description: 
-    en: "Color of side-bar link icons. Leave blank to use current default."
-  
-current_link_font_color:
-  type: string
-  default: ""
-  description: 
-    en: "Color of the active side-bar link font. Leave blank to use current default."
-  
-current_link_background_color:
-  type: string
-  default: ""
-  description: 
-    en: "Background color of the active side-bar link. Leave blank to use current default."
- 
-current_link_icon_color:
-  type: string
-  default: ""
-  description: 
-    en: "Color of the active side-bar link icon. Leave blank to use current default."
-
-hide_community_section:
+Show_top_section_for_staff_only:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Community Section from all users."
+    en: "Show the top section of the navigation menu for staff only."
   
-hide_community_section_from_anon:
+Show_top_section_for_logged-in_only:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Community Section from anonymous users only."
-
-hide_more_section:
+    en: "Show the top section of the navigation menu for only logged-in users."
+  
+Hide_top_section_for_all:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar More Section from all users."
-
-hide_more_section_from_anon:
-  type: bool
-  default: false
-  description: 
-    en: "Hide the side-bar More Section from anonymous users only."
+    en: "Hide the top section of the navigation menu from all users."
     
-hide_anniversaries:
+Show_more_for_staff_only:
   type: bool
   default: false
   description: 
-    en: "Hide the Anniversaries link in the More section."
-
-hide_birthdays:
-  type: bool
-  default: false
-  description: 
-    en: "Hide the Birthdays link in the More section."
-
-hide_docs:
-  type: bool
-  default: false
-  description: 
-    en: "Hide the Docs link in the More section."
-
-hide_categories_section:
-  type: bool
-  default: false
-  description: 
-    en: "Hide the sidebar Categories Section from all users."
+    en: "Show the more drop-down section of the navigation menu for staff only."
   
-hide_categories_from_anon:
+Show_more_for_logged-in_only:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Categories Section from anonymous users only."
+    en: "Show the more section of the navigation menu for only logged-in users."
 
-hide_tags_section:
+Show_anniversaries_for_staff_only:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Tags Section from all users."
+    en: "Show the Anniversaries link in the More section for staff only, if you have the cakeday plugin installed. Only logged-in users can view by default."
+
+Show_anniversaries_for_staff_only:
+  type: bool
+  default: false
+  description: 
+    en: "Show the Birthdays link in the More section for staff only, if you have the cakeday plugin installed. Only logged-in users can view by default."
+
+Show_Docs_for_staff_only:
+  type: bool
+  default: false
+  description: 
+    en: "Show the Docs link in the More section for staff only, if you have the Docs plugin installed. Only logged-in users can view by default."
+
+Show_categories_for_staff_only:
+  type: bool
+  default: false
+  description: 
+    en: "Show the Categories section for staff only."
   
-hide_tags_from_anon:
+Show_categories_for_logged-in_only:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Tags Section from anonymous users only."
+    en: "Show the Categories section for logged-in users only."
 
-hide_messages_section:
-  type: bool
-  default: false
-  description: "Hide the side-bar Messages Section."
-
-hide_channels_section:
+Show_tags_for_staff_only:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Channels Section."
-
-hide_personal_chat_section:
-  type: bool
-  default: false
-  description: 
-    en: "Hide the side-bar Personal Chat Section."
-
-hide_category_bullets:
-  type: bool
-  default: false
-  description: 
-    en: "Hide the Category bullets in the side-bar."
+    en: "Show the Tags section for staff only."
   
-hide_lock_icon:
+Show_tags_for_logged-in_only:
   type: bool
   default: false
   description: 
-    en: "Hide the lock badge icon for secured categories in the side-bar."
+    en: "Show the Tags section for logged-in users only."
 
-category_bullet_rounding:
-  type: enum
-  default: ""
-  choices:
-    - 10%
-    - 20%
-    - 30%
-    - 40%
-    - 50%
+Show_messages_for_staff_only:
+  type: bool
+  default: false
   description: 
-    en: "Side-bar category bullet rounding. Blank = default square, 50% = circle."
-
-hide_custom_section_from_anon:
+    en: "Show the Messages section for staff only."
+  
+Show_messages_for_logged-in_only:
   type: bool
   default: false
-  description:
-    en: "Hide a custom section from anonymous users."
+  description: 
+    en: "Show the Messages section for logged-in users only."   
 
-hide_custom_section_from_users:
+Show_channels_for_staff_only:
   type: bool
   default: false
-  description:
-    en: "Hide a custom section from everyone except Staff (admins and moderators). Hide from anonymous users setting above must be disabled."
- 
-custom_section_to_hide:
+  description: 
+    en: "Show the Channels section for staff only."
+  
+Show_channels_for_logged-in_only:
+  type: bool
+  default: false
+  description: 
+    en: "Show the Channels section for logged-in users only."
+
+Show_personaL_chat_for_staff_only:
+  type: bool
+  default: false
+  description: 
+    en: "Show the Personal Chat section for staff only."
+  
+Show_personal_chat_for_logged-in_only:
+  type: bool
+  default: false
+  description: 
+    en: "Show the Personal Chat section for logged-in users only."
+
+Anon_menu_section:
   type: string
-  default: ""
+  default: "anon-menu-name"
   description:
-    en: "Custom section to hide from anon or regular users as specfied in above two settings. Use all lowercase and dashes for spaces (ie: forum-links)."
+    en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu). Always visible to staff."
 
-hide_all_from_anon:
+User_menu_section:
+  type: string
+  default: "user-menu-name"
+  description:
+    en: "Custom section to show for logged-in users only. Use all lowercase and dashes for spaces (ie: User Menu = user-menu)."
+
+Show_navigation_menu_to_logged-in_only:
   type: bool
   default: false
   description: 
-    en: "Hide the entire side-bar from anonymous users"  
+    en: "Show navigation menu for only logged-in users (hide the entire side-bar from anonymous users)."  
