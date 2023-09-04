@@ -1,4 +1,4 @@
-@if $hide_all_from_anon == "true" {
+@if $show_navigation_menu_to_logged-in_only == "true" {
   html.anon {
   // Hide hamburger button
     .d-header-icons {
