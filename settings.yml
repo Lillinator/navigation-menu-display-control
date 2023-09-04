@@ -40,8 +40,15 @@ show_custom_for_anon_only:
   description:
     en: "Custom section to show for only for anonymous (not-logged-in) users and staff. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
 
+hide_custom_menus_globe_icon:
+  type: bool
+  default: false
+  description:
+    en: "Hide the custom menu globe icon from staff (this setting only affects staff, since non-staff cannot see the globe by default)."
+
 show_navigation_menu_to_logged-in_only:
   type: bool
   default: false
   description:
     en: "Show entire navigation menu for only logged-in users (hide the entire menu from anon users)."
+
