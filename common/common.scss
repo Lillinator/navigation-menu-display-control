@@ -58,7 +58,7 @@
 
    $user_links: str-to-list("#{$show_these_links_for_logged-in_only}", "|");
 
-   @each $user_link in $user_link {
+   @each $user_link in $user_links {
 
       .sidebar-section-link-wrapper[data-list-item-name="#{$user_link}"] {
          display: block;
