@@ -101,6 +101,14 @@
    }
 }
 
+// * hide globe icon from staff * //
+
+@if $hide_custom_menus_globe_icon == "true" {
+   .sidebar-section-wrapper .sidebar-section-header-global-indicator {
+       display: none;
+   }
+}
+
 // * hide entire Navigaion Menu from anon in desktop and mobile view* * //
 
 @if $show_navigation_menu_to_logged-in_only =="true" {
