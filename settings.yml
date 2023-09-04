@@ -94,13 +94,13 @@ Show_channels_for_logged-in_only:
   description: 
     en: "Show the Channels section for logged-in users only."
 
-Show_personaL_chat_for_staff_only:
+Show_chat_for_staff_only:
   type: bool
   default: false
   description: 
     en: "Show the Personal Chat section for staff only."
   
-Show_personal_chat_for_logged-in_only:
+Show_chat_for_logged-in_only:
   type: bool
   default: false
   description: 
