@@ -26,17 +26,20 @@
 // * More drop down section * //
 
 @if $show_more_for_staff_only == "true" {
-   .btn-flat.sidebar-more-section-links-details-summary {
+   .btn-flat.sidebar-more-section-links-details-summary, 
+   .anon .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
       display: none;
    }
 
-   .staff .btn-flat.sidebar-more-section-links-details-summary {
+   .staff .btn-flat.sidebar-more-section-links-details-summary, 
+   .anon .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
       display: block;
    }
 }
 
 @if $show_more_for_logged-in_only == "true" {
-   .anon .btn-flat.sidebar-more-section-links-details-summary {
+   .anon .btn-flat.sidebar-more-section-links-details-summary, 
+   .anon .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
       display: none;
    }
 }
