@@ -1,6 +1,6 @@
 // * Top section * //
 
-@if $Show_top_section_for_staff_only == "true" {
+@if $show_top_section_for_staff_only == "true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
       display: none;
    }
@@ -10,13 +10,13 @@
    }
 }
 
-@if $Show_top_section_for_logged-in_only == "true" {
+@if $show_top_section_for_logged-in_only == "true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
       display: none;
    }
 }
 
-@if $Hide_top_section_for_all == "true" {
+@if $hide_top_section_for_all == "true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
       display: none;
    }
@@ -25,7 +25,7 @@
 
 // * More drop down section * //
 
-@if $Show_more_for_staff_only == "true" {
+@if $show_more_for_staff_only == "true" {
    .btn-flat.sidebar-more-section-links-details-summary {
       display: none;
    }
@@ -35,7 +35,7 @@
    }
 }
 
-@if $Show_more_for_logged-in_only == "true" {
+@if $show_more_for_logged-in_only == "true" {
    .anon .btn-flat.sidebar-more-section-links-details-summary {
       display: none;
    }
@@ -44,7 +44,7 @@
 
 // * More drop-down sections * //
 
-@if $Show_anniversaries_for_staff_only == "true" {
+@if $show_anniversaries_for_staff_only == "true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="anniversaries"] {
@@ -62,7 +62,7 @@
    }
 }
 
-@if $Show_birthdays_for_staff_only == "true" {
+@if $show_birthdays_for_staff_only == "true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="birthdays"] {
@@ -81,7 +81,7 @@
 }
 
 
-@if $Show_docs_for_staff_only == "true" {
+@if $show_docs_for_staff_only == "true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="docs"] {
@@ -111,7 +111,7 @@
 
 // * Categories and Tags sections * //
 
-@if $Show_categories_for_staff_only == "true" {
+@if $show_categories_for_staff_only == "true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
       display: none;
    }
@@ -121,13 +121,13 @@
    }
 }
 
-@if $Show_categories_for_logged-in_only == "true" {
+@if $show_categories_for_logged-in_only == "true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
       display: none;
    }
 }
 
-@if $Show_tags_for_staff_only == "true" {
+@if $show_tags_for_staff_only == "true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
       display: none;
    }
@@ -137,7 +137,7 @@
    }
 }
 
-@if $Show_tags_for_logged-in_only == "true" {
+@if $show_tags_for_logged-in_only == "true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
       display: none;
    }
@@ -145,7 +145,7 @@
 
 // * Messages Section * //
 
-@if $Show_messages_for_staff_only == "true" {
+@if $show_messages_for_staff_only == "true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
       display: none;
    }
@@ -155,7 +155,7 @@
    }
 }
 
-@if $Show_messages_for_logged-in_only == "true" {
+@if $show_messages_for_logged-in_only == "true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
       display: none;
    }
@@ -163,7 +163,7 @@
 
 // * Channels Section *
 
-@if $Show_channels_for_staff_only == "true" {
+@if $show_channels_for_staff_only == "true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
       display: none;
    }
@@ -173,7 +173,7 @@
    }
 }
 
-@if $Show_channels_for_logged-in_only == "true" {
+@if $show_channels_for_logged-in_only == "true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
       display: none;
    }
@@ -181,7 +181,7 @@
 
 // * Chat Section *
 
-@if $Show_chat_for_staff_only == "true" {
+@if $show_chat_for_staff_only == "true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
       display: none;
    }
@@ -191,7 +191,7 @@
    }
 }
 
-@if $Show_chat_for_logged-in_only == "true" {
+@if $show_chat_for_logged-in_only == "true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
       display: none;
    }
@@ -199,7 +199,7 @@
 
 // * Anon and Logged-in only user sections * //
 
-@if $Show_custom_for_staff_only !="" {
+@if $show_custom_for_staff_only !="" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$staff_menu_section}"] {
       display: none;
    }
@@ -209,7 +209,7 @@
    }
 }
 
-@if $Show_custom_for_logged-in_only !="" {
+@if $show_custom_for_logged-in_only !="" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$logged-in_menu_section}"] {
       display: none;
    }
@@ -219,7 +219,7 @@
    }
 }
 
-@if $Show_custom_for_anon_only !="" {
+@if $show_custom_for_anon_only !="" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$anon_menu_section}"] {
       display: none;
    }
@@ -231,7 +231,7 @@
 
 // * hide entire Navigaion Menu from anon in desktop and mobile view* * //
 
-@if $Show_navigation_menu_to_logged-in_only == "true" {
+@if $show_navigation_menu_to_logged-in_only == "true" {
    html.anon {
 
       // Hide the narrow desktop sidebar 
