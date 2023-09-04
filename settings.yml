@@ -106,15 +106,21 @@ Show_chat_for_logged-in_only:
   description: 
     en: "Show the Personal Chat section for logged-in users only."
 
-Anon_menu_section:
+Show_custom_for_staff_only:
   type: string
-  default: "anon-menu-name"
+  default: "staff-menu"
   description:
-    en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu). Always visible to staff."
+    en: "Custom section to show for only for staff users. Use all lowercase and dashes for spaces (ie: Staff Menu = anon-menu)."
 
-User_menu_section:
+Show_custom_for_anon_only:
   type: string
-  default: "user-menu-name"
+  default: "anon-menu"
+  description:
+    en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
+
+Show_custom_for_logged-in_only:
+  type: string
+  default: "user-menu"
   description:
     en: "Custom section to show for logged-in users only. Use all lowercase and dashes for spaces (ie: User Menu = user-menu)."
 
