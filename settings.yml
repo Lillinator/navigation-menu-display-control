@@ -34,7 +34,7 @@ Show_anniversaries_for_staff_only:
   description: 
     en: "Show the Anniversaries link in the More section for staff only, if you have the cakeday plugin installed. Only logged-in users can view by default."
 
-Show_anniversaries_for_staff_only:
+Show_birthdays_for_staff_only:
   type: bool
   default: false
   description: 
