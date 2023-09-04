@@ -38,7 +38,7 @@ show_custom_for_anon_only:
   type: string
   default: "anon-menu"
   description:
-    en: "Custom section to show for only for anonymous (not-logged-in) users and staff. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
+    en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
 
 hide_custom_menus_globe_icon:
   type: bool
