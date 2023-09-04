@@ -28,14 +28,13 @@
     .btn-flat.sidebar-more-section-links-details-summary {
        display: none;
     }
-    .staff .btn-flat.sidebar-more-section-links-details-summary, 
+    .staff .btn-flat.sidebar-more-section-links-details-summary { 
        display: block;
       }
-   }
-} 
+}
 
 @if $Show_more_for_logged-in_only == "true" {
-   .anon .btn-flat.sidebar-more-section-links-details-summary, 
+   .anon .btn-flat.sidebar-more-section-links-details-summary {
     display: none;
     }
 } 
