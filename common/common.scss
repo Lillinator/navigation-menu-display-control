@@ -1,147 +1,94 @@
+// * Top section * //
 
-// * hide entire Navigaion Menu from anon in desktop and mobile view*
-
-@if $hide_all_from_anon == "true" {
-   html.anon {
-  // Hide the narrow desktop sidebar 
-  // sidebar mobile version which is activate on desktop too under 1000px width
-  .d-header .hamburger-panel {
-    display: none;
-  }
-  // Hide the header cloak when menu opens
-  .header-cloak {
-    display: none !important;
-    }
-  }
-}
-
-
-// * hide the Community Section from all or anon *
-
-@if $hide_community_section == "true" {
+@if $Show_top_section_for_staff_only == "true" {
     .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
     display: none;
     }
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
+    display: block;
+    }
 } 
 
-@if $hide_community_section_from_anon == "true" {
+@if $Show_top_section_for_logged-in_only == "true" {
     .anon .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
     display: none;
     }
 } 
 
-// * hide More section from all regular or anon users *
-
-@if $hide_more_section_from_anon == "true" {
-    .anon .btn-flat.sidebar-more-section-links-details-summary, 
-    .anon .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
-    display: none;
-    }
-}
-
-@if $hide_more_section == "true" {
-    .btn-flat.sidebar-more-section-links-details-summary, 
-    .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
-    display: none;
-    }
-}
-
-// * hide the Categories Section *
-
-@if $hide_categories_section == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
+@if $Hide_top_section_for_all == "true" {
+    .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
     display: none;
     }
 } 
 
-// * hide the Categories Section from anon users *
 
-@if $hide_categories_from_anon == "true" {
-    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
+// * More drop down section * //
+
+@if $Show_more_for_staff_only == "true" {
+    .btn-flat.sidebar-more-section-links-details-summary {
+       display: none;
+    }
+    .staff .btn-flat.sidebar-more-section-links-details-summary, 
+    display: block;
+    }
+} 
+
+@if $Show_more_for_logged-in_only == "true" {
+   .anon .btn-flat.sidebar-more-section-links-details-summary, 
     display: none;
     }
 } 
 
-// * hide the Tags Section from all or anon*
 
-@if $hide_tags_section == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
-    display: none;
-    }
-} 
-// * hide the Tags Section from anon users *
+// * More drop-down sections * //
 
-@if $hide_tags_from_anon == "true" {
-    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
-    display: none;
-    }
-} 
-
-// * hide the Messages Section *
-
-@if $hide_messages_section == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
-    display: none;
-   }
-} 
-
-// * hide the Channels Section *
-
-@if $hide_channels_section == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
-    display: none;
-   }
-} 
-
-// * hide the Personal Chat Section *
-
-@if $hide_personal_chat_section == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
-    display: none;
-    }
-} 
-
-// * hide category bullets *
-
-@if $hide_category_bullets == "true" {
-    .sidebar-section-link-wrapper .sidebar-section-link-prefix .prefix-span {
-    display: none;
-    }
-} 
-
-// * sidebar category bullet styling *
-
-.sidebar-section-link-wrapper .sidebar-section-link-prefix .prefix-span {
-    //width: $category_bullet_size;
-    //height: $category_bullet_size;
-    border-radius: $category_bullet_rounding;
-}
-
-// * hide the lock icon for all secure categories in the sidebar *
-
-@if $hide_lock_icon == "true" {
-    .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge {
-    display: none;
-    }
- } 
-
-// * More sections to hide *
-
-@if $hide_anniversaries == "true" {
+@if $Show_anniversaries_for_staff_only == "true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="anniversaries"] {
-         display: none;
+           display: none;
+        }
+      }
+   }
+   .sidebar-section-link-wrapper {
+     .staff .sidebar-section-link {
+        &[data-link-name="anniversaries"] {
+          display: block;
         }
       }
    }
 } 
 
-@if $hide_birthdays == "true" {
+@if $Show_birthdays_for_staff_only == "true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="birthdays"] {
-         display: none;
+           display: none;
+        }
+      }
+   }
+   .sidebar-section-link-wrapper {
+     .staff .sidebar-section-link {
+        &[data-link-name="birthdays"] {
+          display: block;
+        }
+      }
+   }
+} 
+
+
+@if $Show_docs_for_staff_only == "true" {
+   .sidebar-section-link-wrapper {
+      .sidebar-section-link {
+         &[data-link-name="docs"] {
+           display: none;
+        }
+      }
+   }
+   .sidebar-section-link-wrapper {
+     .staff .sidebar-section-link {
+        &[data-link-name="docs"] {
+          display: block;
         }
       }
    }
@@ -157,18 +104,133 @@
    }
 } 
 
-// * hide custom sections *
+// * Categories and Tags sections * //
 
-@if $hide_custom_section_from_anon == "true" {
-    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section_to_hide}"] {
-        display: none;
+@if $Show_categories_for_staff_only == "true" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
+       display: none;
     }
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
+    display: block;
+    }
+} 
+
+@if $Show_categories_for_logged-in_only == "true" {
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
+     display: none;
+    }
+} 
+
+@if $Show_tags_for_staff_only == "true" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
+       display: none;
+    }
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
+    display: block;
+    }
+} 
+
+@if $Show_tags_for_logged-in_only == "true" {
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
+     display: none;
+    }
+} 
+
+// * Messages Section * //
+
+// * hide the Messages Section *
+
+@if $Show_messages_for_staff_only == "true" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
+       display: none;
+    }
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
+    display: block;
+    }
+} 
+
+@if $Show_messages_for_logged-in_only == "true" {
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
+     display: none;
+    }
+} 
+
+// * Channels Section *
+
+@if $Show_channels_for_staff_only == "true" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
+       display: none;
+    }
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
+    display: block;
+    }
+} 
+
+@if $Show_channels_for_logged-in_only == "true" {
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
+     display: none;
+    }
+} 
+
+// * Chat Section *
+
+@if $Show_chat_for_staff_only == "true" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
+       display: none;
+    }
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
+    display: block;
+    }
+} 
+
+@if $Show_chat_for_logged-in_only == "true" {
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
+     display: none;
+    }
+} 
+
+// * Anon and Logged-in only user sections * //
+
+@if $Show_custom_for_staff_only != "" {
+    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$staff_menu_section}"] {
+         display: none;
+     }
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="#{$staff_menu_section}"] {
+         display: block;
+   }
 }
 
-@if $hide_custom_section_from_users == "true" {
-  body:not(.staff) {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section_to_hide}"] {
-        display: none;
+@if $Show_custom_for_logged-in_only != "" {
+    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$logged-in_menu_section}"] {
+         display: none;
+     }
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$logged-in_menu_section}"] {
+         display: block;
+   }
+}
+   
+@if $Show_custom_for_anon_only != "" {
+    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$anon_menu_section}"] {
+         display: none;
+     }
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$anon_menu_section}"] {
+         display: block;
+   }
+}
+
+// * hide entire Navigaion Menu from anon in desktop and mobile view* * //
+
+@if $Show_navigation_menu_to_logged-in_only == "true" {
+   html.anon {
+  // Hide the narrow desktop sidebar 
+  // sidebar mobile version which is activate on desktop too under 1000px width
+  .d-header .hamburger-panel {
+    display: none;
+  }
+  // Hide the header cloak when menu opens
+  .header-cloak {
+    display: none !important;
     }
   }
 }
+
