@@ -1,56 +1,24 @@
 show_these_sections_for_staff_only:
-  type: enum
-  default: ""
-  choices:
-    - community
-    - categories
-    - tags
-    - messages
-    - chat-channels
-    - chat-dms
+  type: list
+  default: community|categories|tags|messages|chat-channels|chat-dms
   description: 
     en: "Show these navigation sidebar sections for staff only."
   
 show_these_sections_for_logged-in_only:
-  type: enum
-  default: ""
-  choices:
-    - community
-    - categories
-    - tags
-    - messages
-    - chat-channels
-    - chat-dms
+  type: list
+  default: community|categories|tags|messages|chat-channels|chat-dms
   description: 
     en: "Show these navigation sidebar sections for logged-in only (hide from anon users)."
 
 show_these_links_for_staff_only:
-  type: enum
-  default: ""
-  choices:
-    - everything
-    - my-posts
-    - anniversaries
-    - birthdays
-    - docs
-    - badges
-    - users
-    - about
+  type: list
+  default: everything|my-posts|anniversaries|birthdays|docs|badges|users|about|faq
   description: 
     en: "Show these navigation sidebar links for staff only."
   
 show_these_links_for_logged-in_only:
-  type: enum
-  default: ""
-  choices:
-    - everything
-    - my-posts
-    - anniversaries
-    - birthdays
-    - docs
-    - badges
-    - users
-    - about
+  type: list
+  default: everything|my-posts|anniversaries|birthdays|docs|badges|users|about|faq  
   description: 
     en: "Show these navigation sidebar links for logged-in users only (hide from anon users)."
 
