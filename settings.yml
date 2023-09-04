@@ -1,122 +1,76 @@
-show_top_section_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the top section of the navigation menu for staff only."
+show_these_sections_for_staff_only:
+    type: enum
+  default: ""
+  choices:
+    - community
+    - categories
+    - tags
+    - messages
+    - chat-channels
+    - chat-dms
+  description: 
+    en: "Show these navigation sidebar sections for staff only."
+  
+  show_these_sections_for_logged-in_only:
+    type: enum
+  default: ""
+  choices:
+    - community
+    - categories
+    - tags
+    - messages
+    - chat-channels
+    - chat-dms
+  description: 
+    en: "Show these navigation sidebar sections for logged-in only (hide from anon users)."
 
-show_top_section_for_logged-in_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the top section of the navigation menu for only logged-in users."
-
-hide_top_section_for_all:
-  type: bool
-  default: false
-  description:
-    en: "Hide the top section of the navigation menu from all users."
+show_these_links_for_staff_only:
+    type: enum
+  default: ""
+  choices:
+    - everything
+    - my-posts
+    - anniversaries
+    - birthdays
+    - docs
+    - badges
+    - users
+    - about
+  description: 
+    en: "Show these navigation sidebar links for staff only."
+  
+  show_these_links_for_logged-in_only:
+    type: enum
+  default: ""
+  choices:
+    - everything
+    - my-posts
+    - anniversaries
+    - birthdays
+    - docs
+    - badges
+    - users
+    - about
+  description: 
+    en: "Show these navigation sidebar links for logged-in users only (hide from anon users)."
 
 show_more_for_staff_only:
   type: bool
   default: false
   description:
-    en: "Show the more drop-down section of the navigation menu for staff only."
+    en: "Show More drop-down section for staff only."
 
 show_more_for_logged-in_only:
   type: bool
   default: false
   description:
-    en: "Show the more section of the navigation menu for only logged-in users."
-
-show_anniversaries_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Anniversaries link in the More section for staff only, if you have the cakeday plugin installed. Only logged-in users can view by default."
-
-show_birthdays_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Birthdays link in the More section for staff only, if you have the cakeday plugin installed. Only logged-in users can view by default."
-
-show_docs_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Docs link in the More section for staff only, if you have the Docs plugin installed. Only logged-in users can view by default."
-
-show_categories_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Categories section for staff only."
-
-show_categories_for_logged-in_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Categories section for logged-in users only."
-
-show_tags_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Tags section for staff only."
-
-show_tags_for_logged-in_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Tags section for logged-in users only."
-
-show_messages_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Messages section for staff only."
-
-show_messages_for_logged-in_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Messages section for logged-in users only."
-
-show_channels_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Channels section for staff only."
-
-show_channels_for_logged-in_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Channels section for logged-in users only."
-
-show_chat_for_staff_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Personal Chat section for staff only."
-
-show_chat_for_logged-in_only:
-  type: bool
-  default: false
-  description:
-    en: "Show the Personal Chat section for logged-in users only."
+    en: "Show More drop-down section for logged-in users only (hide from anon users)."
 
 show_custom_for_staff_only:
   type: string
   default: "staff-menu"
   description:
-    en: "Custom section to show for only for staff users. Use all lowercase and dashes for spaces (ie: Staff Menu = anon-menu)."
-
-show_custom_for_anon_only:
-  type: string
-  default: "anon-menu"
-  description:
-    en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
+    en: "Custom section to show for only for staff users. Use all lowercase and dashes for spaces (ie: Staff Menu = staff-menu)."
 
 show_custom_for_logged-in_only:
   type: string
@@ -124,8 +78,14 @@ show_custom_for_logged-in_only:
   description:
     en: "Custom section to show for logged-in users only. Use all lowercase and dashes for spaces (ie: User Menu = user-menu)."
 
+show_custom_for_anon_only:
+  type: string
+  default: "anon-menu"
+  description:
+    en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
+
 show_navigation_menu_to_logged-in_only:
   type: bool
   default: false
   description:
-    en: "Show navigation menu for only logged-in users (hide the entire side-bar from anonymous users)."
+    en: "Show entire navigation menu for only logged-in users (hide the entire side-bar from anon users)."
