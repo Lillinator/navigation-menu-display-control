@@ -99,16 +99,6 @@
    }
 }
 
-@if $hide_docs == "true" {
-   .sidebar-section-link-wrapper {
-      .sidebar-section-link {
-         &[data-link-name="docs"] {
-            display: none;
-         }
-      }
-   }
-}
-
 // * Categories and Tags sections * //
 
 @if $show_categories_for_staff_only == "true" {
