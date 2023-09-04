@@ -27,12 +27,11 @@
 
 @if $show_more_for_staff_only == "true" {
    .btn-flat.sidebar-more-section-links-details-summary, 
-   .anon .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
+   .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
       display: none;
    }
-
    .staff .btn-flat.sidebar-more-section-links-details-summary, 
-   .anon .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
+   .staff .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
       display: block;
    }
 }
@@ -203,12 +202,8 @@
 }
 
 @if $show_custom_for_logged-in_only !="" {
-   .sidebar-section-wrapper.sidebar-section[data-section-name="#{$show_custom_for_staff_only}"] {
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$show_custom_for_logged-in_only}"] {
       display: none;
-   }
-
-   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$show_custom_for_staff_only}"] {
-      display: block;
    }
 }
 
