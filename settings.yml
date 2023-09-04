@@ -26,19 +26,19 @@ show_more_for_staff_only:
   type: bool
   default: false
   description:
-    en: "Show More drop-down section for staff only."
+    en: "Show More drop-down section for staff only. Overrides More links display where relevant."
 
 show_more_for_logged-in_only:
   type: bool
   default: false
   description:
-    en: "Show More drop-down section for logged-in users only (hide from anon users)."
+    en: "Show More drop-down section for logged-in users only (hide from anon users). Above setting cannot be enabled. Overrides More links display where relevant."
 
 show_custom_for_anon_only:
   type: string
   default: "anon-menu"
   description:
-    en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
+    en: "Custom section to show for only for anonymous (not-logged-in) users and staff. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
 
 show_navigation_menu_to_logged-in_only:
   type: bool
