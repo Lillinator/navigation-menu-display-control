@@ -1,5 +1,5 @@
 show_these_sections_for_staff_only:
-    type: enum
+  type: enum
   default: ""
   choices:
     - community
@@ -12,7 +12,7 @@ show_these_sections_for_staff_only:
     en: "Show these navigation sidebar sections for staff only."
   
   show_these_sections_for_logged-in_only:
-    type: enum
+  type: enum
   default: ""
   choices:
     - community
@@ -25,7 +25,7 @@ show_these_sections_for_staff_only:
     en: "Show these navigation sidebar sections for logged-in only (hide from anon users)."
 
 show_these_links_for_staff_only:
-    type: enum
+  type: enum
   default: ""
   choices:
     - everything
@@ -40,7 +40,7 @@ show_these_links_for_staff_only:
     en: "Show these navigation sidebar links for staff only."
   
   show_these_links_for_logged-in_only:
-    type: enum
+  type: enum
   default: ""
   choices:
     - everything
