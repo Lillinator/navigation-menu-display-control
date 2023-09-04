@@ -1,8 +1,8 @@
 {
-  "name": "Discourse Navigation Menu Modifier",
+  "name": "Discourse Navigation Menu Changer",
   "component": true,
-  "about_url": "https://meta.discourse.org/t/navigation-menu-sidebar-modifier/267354",
-  "license_url": "https://github.com/Lillinator/sidebar-mods/blob/main/LICENSE",
+  "about_url": "https://github.com/Lillinator/custom-menus/blob/main/README.md",
+  "license_url": "https://github.com/Lillinator/custom-menus/blob/main/LICENSE",
   "authors": "@Lillinator",
-  "theme_version": "1.2"
+  "theme_version": "2.0"
 }
