@@ -2,25 +2,25 @@ show_these_sections_for_staff_only:
   type: list
   default: chat-channels|chat-dms
   description: 
-    en: "Show these navigation sidebar sections for staff only. Use lower-case section names with dashes for spaces."
+    en: "Show these navigation sidebar sections for staff only. Can use default or custom sections. Use lower-case section names with dashes for spaces."
   
 show_these_sections_for_logged-in_only:
   type: list
   default: community|categories|tags|messages
   description: 
-    en: "Show these navigation sidebar sections for logged-in only (hide from anon users)."
+    en: "Show these navigation sidebar sections for logged-in only (hide from anon users). Can use default or custom sections."
 
 show_these_links_for_staff_only:
   type: list
   default: anniversaries|birthdays|users
   description: 
-    en: "Show these navigation sidebar links for staff only. Use lower-case link names with dashes for spaces"
+    en: "Show these navigation sidebar links for staff only. Can use defaults or custom links. Use lower-case link names with dashes for spaces."
   
 show_these_links_for_logged-in_only:
   type: list
   default: everything|my-posts|docs|badges|about|faq  
   description: 
-    en: "Show these navigation sidebar links for logged-in users only (hide from anon users)."
+    en: "Show these navigation sidebar links for logged-in users only (hide from anon users). Can use defaults or custom links."
 
 show_more_for_staff_only:
   type: bool
@@ -33,18 +33,6 @@ show_more_for_logged-in_only:
   default: false
   description:
     en: "Show More drop-down section for logged-in users only (hide from anon users)."
-
-show_custom_for_staff_only:
-  type: string
-  default: "staff-menu"
-  description:
-    en: "Custom section to show for only for staff users. Use all lowercase and dashes for spaces (ie: Staff Menu = staff-menu)."
-
-show_custom_for_logged-in_only:
-  type: string
-  default: "user-menu"
-  description:
-    en: "Custom section to show for logged-in users only. Use all lowercase and dashes for spaces (ie: User Menu = user-menu)."
 
 show_custom_for_anon_only:
   type: string
