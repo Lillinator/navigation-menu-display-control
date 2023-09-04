@@ -18,7 +18,7 @@ show_these_links_for_staff_only:
   
 show_these_links_for_logged-in_only:
   type: list
-  default: everything|my-posts|docs|badges|about|faq|custom-user-link
+  default: everything|docs|badges|about|faq|custom-user-link
   description: 
     en: "Show these navigation sidebar links for logged-in users only (hide from anon users). Can use defaults or custom links."
 
