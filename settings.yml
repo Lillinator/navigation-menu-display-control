@@ -11,7 +11,7 @@ show_these_sections_for_staff_only:
   description: 
     en: "Show these navigation sidebar sections for staff only."
   
-  show_these_sections_for_logged-in_only:
+show_these_sections_for_logged-in_only:
   type: enum
   default: ""
   choices:
@@ -39,7 +39,7 @@ show_these_links_for_staff_only:
   description: 
     en: "Show these navigation sidebar links for staff only."
   
-  show_these_links_for_logged-in_only:
+show_these_links_for_logged-in_only:
   type: enum
   default: ""
   choices:
