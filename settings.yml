@@ -44,4 +44,4 @@ show_navigation_menu_to_logged-in_only:
   type: bool
   default: false
   description:
-    en: "Show entire navigation menu for only logged-in users (hide the entire side-bar from anon users)."
+    en: "Show entire navigation menu for only logged-in users (hide the entire menu from anon users)."
