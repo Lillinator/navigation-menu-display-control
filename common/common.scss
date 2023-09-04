@@ -1,235 +1,248 @@
 // * Top section * //
 
-@if $Show_top_section_for_staff_only == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
-    display: none;
-    }
+@if $Show_top_section_for_staff_only =="true" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
+      display: none;
+   }
+
    .staff .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
-    display: block;
-    }
-} 
+      display: block;
+   }
+}
 
-@if $Show_top_section_for_logged-in_only == "true" {
-    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
-    display: none;
-    }
-} 
+@if $Show_top_section_for_logged-in_only =="true" {
+   .anon .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
+      display: none;
+   }
+}
 
-@if $Hide_top_section_for_all == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
-    display: none;
-    }
-} 
+@if $Hide_top_section_for_all =="true" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
+      display: none;
+   }
+}
 
 
 // * More drop down section * //
 
-@if $Show_more_for_staff_only == "true" {
-    .btn-flat.sidebar-more-section-links-details-summary {
-       display: none;
-    }
-    .staff .btn-flat.sidebar-more-section-links-details-summary { 
-       display: block;
-      }
+@if $Show_more_for_staff_only =="true" {
+   .btn-flat.sidebar-more-section-links-details-summary {
+      display: none;
+   }
+
+   .staff .btn-flat.sidebar-more-section-links-details-summary {
+      display: block;
+   }
 }
 
-@if $Show_more_for_logged-in_only == "true" {
+@if $Show_more_for_logged-in_only =="true" {
    .anon .btn-flat.sidebar-more-section-links-details-summary {
-    display: none;
-    }
-} 
+      display: none;
+   }
+}
 
 
 // * More drop-down sections * //
 
-@if $Show_anniversaries_for_staff_only == "true" {
+@if $Show_anniversaries_for_staff_only =="true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="anniversaries"] {
-           display: none;
-        }
+            display: none;
+         }
       }
    }
-   .sidebar-section-link-wrapper {
-     .staff .sidebar-section-link {
-        &[data-link-name="anniversaries"] {
-          display: block;
-        }
-      }
-   }
-} 
 
-@if $Show_birthdays_for_staff_only == "true" {
+   .sidebar-section-link-wrapper {
+      .staff .sidebar-section-link {
+         &[data-link-name="anniversaries"] {
+            display: block;
+         }
+      }
+   }
+}
+
+@if $Show_birthdays_for_staff_only =="true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="birthdays"] {
-           display: none;
-        }
+            display: none;
+         }
       }
    }
+
    .sidebar-section-link-wrapper {
-     .staff .sidebar-section-link {
-        &[data-link-name="birthdays"] {
-          display: block;
-        }
+      .staff .sidebar-section-link {
+         &[data-link-name="birthdays"] {
+            display: block;
+         }
       }
    }
-} 
+}
 
 
-@if $Show_docs_for_staff_only == "true" {
+@if $Show_docs_for_staff_only =="true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="docs"] {
-           display: none;
-        }
+            display: none;
+         }
       }
    }
-   .sidebar-section-link-wrapper {
-     .staff .sidebar-section-link {
-        &[data-link-name="docs"] {
-          display: block;
-        }
-      }
-   }
-} 
 
-@if $hide_docs == "true" {
+   .sidebar-section-link-wrapper {
+      .staff .sidebar-section-link {
+         &[data-link-name="docs"] {
+            display: block;
+         }
+      }
+   }
+}
+
+@if $hide_docs =="true" {
    .sidebar-section-link-wrapper {
       .sidebar-section-link {
          &[data-link-name="docs"] {
-         display: none;
-        }
+            display: none;
+         }
       }
    }
-} 
+}
 
 // * Categories and Tags sections * //
 
-@if $Show_categories_for_staff_only == "true" {
+@if $Show_categories_for_staff_only =="true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
-       display: none;
-    }
+      display: none;
+   }
+
    .staff .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
-    display: block;
-    }
-} 
+      display: block;
+   }
+}
 
-@if $Show_categories_for_logged-in_only == "true" {
+@if $Show_categories_for_logged-in_only =="true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="categories"] {
-     display: none;
-    }
-} 
+      display: none;
+   }
+}
 
-@if $Show_tags_for_staff_only == "true" {
+@if $Show_tags_for_staff_only =="true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
-       display: none;
-    }
-   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
-    display: block;
-    }
-} 
+      display: none;
+   }
 
-@if $Show_tags_for_logged-in_only == "true" {
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
+      display: block;
+   }
+}
+
+@if $Show_tags_for_logged-in_only =="true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
-     display: none;
-    }
-} 
+      display: none;
+   }
+}
 
 // * Messages Section * //
 
-// * hide the Messages Section *
-
-@if $Show_messages_for_staff_only == "true" {
+@if $Show_messages_for_staff_only =="true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
-       display: none;
-    }
-   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
-    display: block;
-    }
-} 
+      display: none;
+   }
 
-@if $Show_messages_for_logged-in_only == "true" {
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
+      display: block;
+   }
+}
+
+@if $Show_messages_for_logged-in_only =="true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
-     display: none;
-    }
-} 
+      display: none;
+   }
+}
 
 // * Channels Section *
 
-@if $Show_channels_for_staff_only == "true" {
+@if $Show_channels_for_staff_only =="true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
-       display: none;
-    }
-   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
-    display: block;
-    }
-} 
+      display: none;
+   }
 
-@if $Show_channels_for_logged-in_only == "true" {
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
+      display: block;
+   }
+}
+
+@if $Show_channels_for_logged-in_only =="true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="chat-channels"] {
-     display: none;
-    }
-} 
+      display: none;
+   }
+}
 
 // * Chat Section *
 
-@if $Show_chat_for_staff_only == "true" {
+@if $Show_chat_for_staff_only =="true" {
    .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
-       display: none;
-    }
-   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
-    display: block;
-    }
-} 
+      display: none;
+   }
 
-@if $Show_chat_for_logged-in_only == "true" {
+   .staff .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
+      display: block;
+   }
+}
+
+@if $Show_chat_for_logged-in_only =="true" {
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="chat-dms"] {
-     display: none;
-    }
-} 
+      display: none;
+   }
+}
 
 // * Anon and Logged-in only user sections * //
 
-@if $Show_custom_for_staff_only != "" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$staff_menu_section}"] {
-         display: none;
-     }
+@if $Show_custom_for_staff_only !="" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="#{$staff_menu_section}"] {
+      display: none;
+   }
+
    .staff .sidebar-section-wrapper.sidebar-section[data-section-name="#{$staff_menu_section}"] {
-         display: block;
+      display: block;
    }
 }
 
-@if $Show_custom_for_logged-in_only != "" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$logged-in_menu_section}"] {
-         display: none;
-     }
+@if $Show_custom_for_logged-in_only !="" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="#{$logged-in_menu_section}"] {
+      display: none;
+   }
+
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$logged-in_menu_section}"] {
-         display: block;
+      display: block;
    }
 }
-   
-@if $Show_custom_for_anon_only != "" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$anon_menu_section}"] {
-         display: none;
-     }
+
+@if $Show_custom_for_anon_only !="" {
+   .sidebar-section-wrapper.sidebar-section[data-section-name="#{$anon_menu_section}"] {
+      display: none;
+   }
+
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$anon_menu_section}"] {
-         display: block;
+      display: block;
    }
 }
 
 // * hide entire Navigaion Menu from anon in desktop and mobile view* * //
 
-@if $Show_navigation_menu_to_logged-in_only == "true" {
+@if $Show_navigation_menu_to_logged-in_only =="true" {
    html.anon {
-  // Hide the narrow desktop sidebar 
-  // sidebar mobile version which is activate on desktop too under 1000px width
-  .d-header .hamburger-panel {
-    display: none;
-  }
-  // Hide the header cloak when menu opens
-  .header-cloak {
-    display: none !important;
-    }
-  }
+
+      // Hide the narrow desktop sidebar 
+      // sidebar mobile version which is activate on desktop too under 1000px width
+      .d-header .hamburger-panel {
+         display: none;
+      }
+
+      // Hide the header cloak when menu opens
+      .header-cloak {
+         display: none !important;
+      }
+   }
 }
