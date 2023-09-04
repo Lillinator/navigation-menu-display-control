@@ -1,24 +1,24 @@
 show_these_sections_for_staff_only:
   type: list
-  default: community|categories|tags|messages|chat-channels|chat-dms
+  default: chat-channels|chat-dms
   description: 
-    en: "Show these navigation sidebar sections for staff only."
+    en: "Show these navigation sidebar sections for staff only. Use lower-case section names with dashes for spaces."
   
 show_these_sections_for_logged-in_only:
   type: list
-  default: community|categories|tags|messages|chat-channels|chat-dms
+  default: community|categories|tags|messages
   description: 
     en: "Show these navigation sidebar sections for logged-in only (hide from anon users)."
 
 show_these_links_for_staff_only:
   type: list
-  default: everything|my-posts|anniversaries|birthdays|docs|badges|users|about|faq
+  default: anniversaries|birthdays|users
   description: 
-    en: "Show these navigation sidebar links for staff only."
+    en: "Show these navigation sidebar links for staff only. Use lower-case link names with dashes for spaces"
   
 show_these_links_for_logged-in_only:
   type: list
-  default: everything|my-posts|anniversaries|birthdays|docs|badges|users|about|faq  
+  default: everything|my-posts|docs|badges|about|faq  
   description: 
     en: "Show these navigation sidebar links for logged-in users only (hide from anon users)."
 
