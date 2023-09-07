@@ -1,10 +1,11 @@
-@if $show_navigation_menu_to_logged-in_only == "true" {
+@if $show_navigation_menu_to_logged-in_only =="true" {
   html.anon {
-  // Hide hamburger button
+
+    // Hide hamburger button
     .d-header-icons {
       .header-dropdown-toggle {
         &.hamburger-dropdown {
-        display: none;
+          display: none;
         }
       }
     }

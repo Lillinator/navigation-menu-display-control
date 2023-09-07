@@ -95,6 +95,7 @@
    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$show_custom_for_anon_only}"] {
       display: none;
    }
+
    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$show_custom_for_anon_only}"] {
       display: block;
    }
@@ -102,9 +103,9 @@
 
 // * hide globe icon from staff * //
 
-@if $hide_custom_menus_globe_icon == "true" {
+@if $hide_custom_menus_globe_icon =="true" {
    .sidebar-section-wrapper .sidebar-section-header-global-indicator {
-       display: none;
+      display: none;
    }
 }
 
@@ -132,7 +133,7 @@
 $menu_sections: str-to-list($default_menu_section_ordering, "|");
 
 @for $i from 1 through length($menu_sections) {
-  .sidebar-section-wrapper.sidebar-section[data-section-name="#{nth($menu_sections, $i)}"] {
-    order: $i; 
-  }
+   .sidebar-section-wrapper.sidebar-section[data-section-name="#{nth($menu_sections, $i)}"] {
+      order: $i;
+   }
 }
