@@ -55,7 +55,7 @@ show_navigation_menu_to_logged-in_only:
 default_menu_section_ordering:
   type: list
   list_type: simple
-  default: categories|tags|messages|chat-dms|chat-channels
+  default: categories|tags|messages|chat-channels|chat-dms
   description: 
     en: "Use the arrow buttons to move the default menu sections up and down to put them in the order they should appear in the navigation sidebar menu. Does not apply to custom menu sections."
   
