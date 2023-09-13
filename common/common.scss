@@ -61,14 +61,21 @@
    @each $user_link in $user_links {
 
       .sidebar-section-link-wrapper[data-list-item-name="#{$user_link}"] {
-         display: block;
+         display: flex;
       }
 
       .anon .sidebar-section-link-wrapper[data-list-item-name="#{$user_link}"] {
-         display: none;
+         display: none;       
       }
    }
 }
+
+
+
+
+
+
+
 
 // * More drop down section * //
 
