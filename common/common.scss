@@ -110,24 +110,25 @@
 
 
 
-// * hides entire Navigation Menu for specified categories * //
+   }
+}
 
-@if $hide_menu_in_these_categories =="true" {
+// * hide entire Navigaion Menu from anon in desktop and mobile view* * //
 
-$hide_menu_cats: str-to-list("#{$hide_menu_in_these_categories}", "|");
+@if $show_navigation_menu_to_logged-in_only =="true" {
+   html.anon {
 
-  @each $hide_cat in $hide_menu_cats {
-    body.has-sidebar-page.category-#{$hide_cat} {
-      #main-outlet-wrapper {
-        grid-template-columns: 0 minmax(0, 1fr);
-        gap: 0;
-        padding-left: 10px;
+      // Hide the narrow desktop sidebar 
+      // sidebar mobile version which is activate on desktop too under 1000px width
+      .d-header .hamburger-panel {
+         display: none;
       }
-     .wrap {
-       max-width: var(--d-max-width);
-     }
-    }
-  }
+
+      // Hide the header cloak when menu opens
+      .header-cloak {
+         display: none !important;
+      }
+   }
 }
 
 // * menu sections re-order * //
