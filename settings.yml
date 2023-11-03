@@ -52,18 +52,9 @@ show_navigation_menu_to_logged-in_only:
   description:
     en: "Show entire navigation menu for only logged-in users (hide the entire menu from anon users)."
 
-hide_menu_in_these_categories:
-  type: list
-  list_type: simple
-  default: ""
-  description:
-    en: "Hide entire navigation menu in these categories only. List using lowercase category slugs found in category URL."
-
-
 default_menu_section_ordering:
   type: list
   list_type: simple
   default: categories|tags|messages|chat-channels|chat-dms
   description: 
     en: "Use the arrow buttons to move the default menu sections up and down to put them in the order they should appear in the navigation sidebar menu. Does not apply to custom menu sections."
-  
