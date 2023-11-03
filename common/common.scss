@@ -2,9 +2,7 @@
 
 @import "str-to-list";
 
-
 // * Top section * //
-
 
 @if $show_these_sections_for_staff_only !="" {
 
@@ -126,6 +124,26 @@
          display: none !important;
       }
    }
+}
+
+// * hides entire Navigation Menu for specified categories * //
+
+@if $hide_menu_in_these_categories =="true" {
+
+$hide_menu_cats: str-to-list("#{$hide_menu_in_these_categories}", "|");
+
+  @each $hide_cat in $hide_menu_cats {
+    body.has-sidebar-page.category-#{$hide_cat} {
+      #main-outlet-wrapper {
+        grid-template-columns: 0 minmax(0, 1fr);
+        gap: 0;
+        padding-left: 10px;
+      }
+     .wrap {
+       max-width: var(--d-max-width);
+     }
+    }
+  }
 }
 
 // * menu sections re-order * //
