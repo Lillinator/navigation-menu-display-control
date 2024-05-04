@@ -8,7 +8,7 @@ show_these_sections_for_logged-in_only:
   type: list
   default: community|categories|tags|custom-user-menu-example
   description: 
-    en: "Show these navigation sidebar sections for logged-in only (hide from anon users). Can use default or custom sections."
+    en: "Show these navigation sidebar sections for logged-in only (hide from anonymous users). Can use default or custom sections."
 
 show_these_links_for_staff_only:
   type: list
@@ -20,7 +20,7 @@ show_these_links_for_logged-in_only:
   type: list
   default: everything|docs|badges|about|faq|Custom User Link Example
   description: 
-    en: "Show these navigation sidebar links for logged-in users only (hide from anon users). Can use defaults or custom links - custom links are case sensitive and should be named exactly the same as the custom link name."
+    en: "Show these navigation sidebar links for logged-in users only (hide from anonymous users). Can use defaults or custom links - custom links are case sensitive and should be named exactly the same as the custom link name."
 
 show_more_for_staff_only:
   type: bool
@@ -32,11 +32,11 @@ show_more_for_logged-in_only:
   type: bool
   default: false
   description:
-    en: "Show More drop-down section for logged-in users only (hide from anon users). Above setting cannot be enabled. Overrides More links display where relevant."
+    en: "Show More drop-down section for logged-in users only (hide from anonymous users). Above setting cannot be enabled. Overrides More links display where relevant."
 
 show_custom_for_anon_only:
   type: string
-  default: "anon-menu"
+  default: "anon-menu-example"
   description:
     en: "Custom section to show for only for anonymous (not-logged-in) users. Use all lowercase and dashes for spaces (ie: Anon Menu = anon-menu)."
 
@@ -50,7 +50,7 @@ show_navigation_menu_to_logged-in_only:
   type: bool
   default: false
   description:
-    en: "Show entire navigation menu for only logged-in users (hide the entire menu from anon users)."
+    en: "Show entire navigation menu for only logged-in users (hide the entire menu from anonymous users)."
 
 default_menu_section_ordering:
   type: list
