@@ -12,15 +12,15 @@ show_these_sections_for_logged-in_only:
 
 show_these_links_for_staff_only:
   type: list
-  default: anniversaries|birthdays|users|custom-staff-link
+  default: anniversaries|birthdays|users|Custom Staff Link Example
   description: 
-    en: "Show these navigation sidebar links for staff only. Can use defaults or custom links. Use lower-case link names with dashes for spaces."
+    en: "Show these navigation sidebar links for staff only. Can use defaults or custom links. Default links are lower case, but custom links are case sensitive and should be named exactly the same as the link name."
   
 show_these_links_for_logged-in_only:
   type: list
-  default: everything|docs|badges|about|faq|custom-user-link
+  default: everything|docs|badges|about|faq|Custom User Link Example
   description: 
-    en: "Show these navigation sidebar links for logged-in users only (hide from anon users). Can use defaults or custom links."
+    en: "Show these navigation sidebar links for logged-in users only (hide from anon users). Can use defaults or custom links - custom links are case sensitive and should be named same case format as actual custom link."
 
 show_more_for_staff_only:
   type: bool
