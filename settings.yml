@@ -1,12 +1,12 @@
 show_these_sections_for_staff_only:
   type: list
-  default: chat-channels|chat-dms|custom-staff-menu
+  default: chat-channels|chat-dms|custom-staff-menu-example
   description: 
-    en: "Show these navigation sidebar sections for staff only. Can use default or custom sections. Use lower-case section names with dashes for spaces."
+    en: "Show these navigation sidebar sections for staff only. Can use default or custom sections. Use lower-case section names with dashes for spaces (like slugs)."
   
 show_these_sections_for_logged-in_only:
   type: list
-  default: community|categories|tags|custom-user-menu
+  default: community|categories|tags|custom-user-menu-example
   description: 
     en: "Show these navigation sidebar sections for logged-in only (hide from anon users). Can use default or custom sections."
 
@@ -20,7 +20,7 @@ show_these_links_for_logged-in_only:
   type: list
   default: everything|docs|badges|about|faq|Custom User Link Example
   description: 
-    en: "Show these navigation sidebar links for logged-in users only (hide from anon users). Can use defaults or custom links - custom links are case sensitive and should be named same case format as actual custom link."
+    en: "Show these navigation sidebar links for logged-in users only (hide from anon users). Can use defaults or custom links - custom links are case sensitive and should be named exactly the same as the custom link name."
 
 show_more_for_staff_only:
   type: bool
