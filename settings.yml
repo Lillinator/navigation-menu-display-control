@@ -46,6 +46,12 @@ hide_custom_menus_globe_icon:
   description:
     en: "Hide the custom menu globe icon from staff (this setting only affects staff, since non-staff cannot see the globe by default)."
 
+show_navigation_menu_to_logged-in_only:
+  type: bool
+  default: false
+  description:
+    en: "Show entire navigation menu for only logged-in users (hide the entire menu from anonymous users)."
+
 default_menu_section_ordering:
   type: list
   list_type: simple

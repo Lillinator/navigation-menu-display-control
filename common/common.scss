@@ -111,21 +111,21 @@
 
 // * hide entire Navigaion Menu from anon in desktop and mobile view* * //
 
-// @if $show_navigation_menu_to_logged-in_only =="true" {
-//    html.anon {
+@if $show_navigation_menu_to_logged-in_only =="true" {
+   html.anon {
 
       // Hide the narrow desktop sidebar 
       // sidebar mobile version which is activate on desktop too under 1000px width
-//       .d-header .hamburger-panel {
-//          display: none;
-//       }
+      .d-header .hamburger-panel {
+         display: none;
+      }
 
       // Hide the header cloak when menu opens
-//       .header-cloak {
-//          display: none !important;
-//       }
-//    }
-// }
+      .header-cloak {
+         display: none !important;
+      }
+   }
+}
 
 // * menu sections re-order * //
 
