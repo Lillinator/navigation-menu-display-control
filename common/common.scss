@@ -72,17 +72,17 @@
 // * More drop down section * //
 
 @if $show_more_for_staff_only =="true" {
-   .btn-flat.sidebar-more-section-links-details-summary {
+   button.sidebar-more-section-links-details-summary {
       display: none;
    }
 
-   .staff .btn-flat.sidebar-more-section-links-details-summary {
+   .staff button.sidebar-more-section-links-details-summary {
       display: flex;
    }
 }
 
 @if $show_more_for_logged-in_only =="true" {
-   .anon .btn-flat.sidebar-more-section-links-details-summary {
+   .anon button.sidebar-more-section-links-details-summary {
       display: none;
    }
 }
