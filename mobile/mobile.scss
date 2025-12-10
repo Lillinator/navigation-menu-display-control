@@ -1,3 +1,8 @@
+.sidebar-sections {
+display: flex;
+flex-direction: column;
+}
+
 @if $show_navigation_menu_to_logged-in_only =="true" {
    html.anon {
 
