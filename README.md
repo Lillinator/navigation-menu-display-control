@@ -1,4 +1,6 @@
-# Discourse navigation menu sections display control 
+# This theme component is deprecated. do not use.
+
+### Discourse navigation menu sections display control 
 https://meta.discourse.org/t/navigation-sidebar-menu-display-control/277687/2
 
 This theme component allows changing the display of navigation menu default and custom sections and/or links to staff-only or logged-in only. It also allows showing of a custom menu section to anonymous users only.
